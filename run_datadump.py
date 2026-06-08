@@ -81,8 +81,6 @@ MAIL_HOST   = 'smtp.gmail.com'
 MAIL_FROM   = 'ghcit@goldenhillsindia.com'
 MAIL_PASS   = 'fwmi sewz xvii gbqv'
 MAIL_TO     = [
-    'vasanthi.g@goldenhillsindia.com',
-    'charan.d@goldenhillsindia.com',
     'ranjith.a@goldenhillsindia.com',
 ]
 
