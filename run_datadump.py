@@ -77,8 +77,9 @@ SQL_DRIVER  = 'ODBC Driver 13 for SQL Server'
 EOD_TOKEN   = '612f4f7f3906a3.86934021'
 
 # Email notifications
+MAIL_HOST   = 'smtp.gmail.com'
 MAIL_FROM   = 'ghcit@goldenhillsindia.com'
-MAIL_PASS   = 'Afsadmin2023$$$$$$$'
+MAIL_PASS   = 'fwmi sewz xvii gbqv'
 MAIL_TO     = [
     'vasanthi.g@goldenhillsindia.com',
     'charan.d@goldenhillsindia.com',
@@ -661,7 +662,7 @@ def send_email(subject: str, html_body: str):
         msg['From']    = MAIL_FROM
         msg['To']      = ', '.join(MAIL_TO)
         msg.attach(MIMEText(html_body, 'html'))
-        with smtplib.SMTP('smtp.gmail.com', 587) as s:
+        with smtplib.SMTP(MAIL_HOST, 587) as s:
             s.starttls()
             s.login(MAIL_FROM, MAIL_PASS)
             s.sendmail(MAIL_FROM, MAIL_TO, msg.as_string())
