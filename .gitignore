@@ -15,6 +15,9 @@ output_file/
 # Archive / old versions — contain stale hardcoded credentials
 vasanthi/
 
+# Generated log
+datadump.log
+
 # OS
 .DS_Store
 Thumbs.db
